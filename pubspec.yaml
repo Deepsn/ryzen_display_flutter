@@ -44,6 +44,9 @@ dependencies:
   syncfusion_flutter_charts: ^29.1.40
   battery_plus: ^6.2.1
   collection: ^1.19.1
+  window_manager: ^0.4.2
+  indexed: ^0.0.8
+  
 
 dev_dependencies:
   flutter_test:

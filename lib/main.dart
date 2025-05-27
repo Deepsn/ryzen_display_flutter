@@ -1,24 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ryzen_display_flutter/display.dart';
+import 'package:ryzen_display_flutter/screens/display_screen.dart';
 
-void main() {
-  runApp(const RyzenDisplay());
-}
+import 'managers/window_manager.dart';
 
-class RyzenDisplay extends StatelessWidget {
-  const RyzenDisplay({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Ryzen display",
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.deepPurple,
-          brightness: Brightness.dark,
-        ),
-      ),
-      home: Scaffold(body: Display()),
-    );
-  }
+void main() async {
+  await manageWindow();
+  runApp(const DisplayScreen());
 }
